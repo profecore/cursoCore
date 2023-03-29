@@ -1,0 +1,229 @@
+html{
+    background-color: rgb(41, 4, 4);
+}
+
+body{
+    margin:auto;
+    background-color: rgb(253, 245, 217); 
+    width: 85%;
+    height: 100%;
+}
+header{
+    position:relative;
+    margin:auto;
+    background-color: rgb(49, 2, 74); 
+    color:ivory;
+    border-bottom: 10px solid rgb(68, 196, 247);
+}
+
+header h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size:4em;
+}
+nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    border:0px solid red;
+}
+nav li{
+    display:inline-block;
+   
+}
+
+nav li a{
+    color:ivory;
+    text-decoration: none;
+    padding: 15px;
+    background-color: rgb(99, 5, 5);
+    border-radius: 8px;
+    font-size:1.5em;
+  
+}
+
+
+nav li a:hover{
+    color:ivory;
+    padding: 15px;
+    background-color: rgb(240, 13, 13);
+}
+
+
+main{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items: flex-start;
+    width:99%;
+    height: 100%;
+}
+
+aside{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    width: 25%;
+    background-color: brown;
+    color:ivory;
+    height: 100%;
+    position: relative;
+    left:10px;
+    box-shadow: 4px 5px 12px #392d2d;
+    margin-top:25px;
+}
+
+aside h2{
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 3px 3px 5px rgb(56, 33, 33);
+    margin-top:15px;
+    width: 100%;
+    background-color: rgba(245, 197, 134, 0.651);
+    line-height: 2em;
+}
+
+aside figure{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+    width: 70%;
+    margin:auto;
+    border:0px solid ivory;
+    margin-top:35px;
+    border-radius: 15px;
+    background-color: black;
+    box-shadow: 4px 5px 12px #392d2d;
+}
+
+aside figure img{
+    position:relative;
+    border-radius: 15px;
+     width:100%;
+    margin:auto;
+    
+}
+aside figure figcaption{
+    margin:auto;
+}
+
+aside div{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    margin-top:40px;
+    padding:15px;
+}
+
+aside div p{
+    text-align: justify;
+}
+
+div.container{
+  
+    border:0px solid blue;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start; 
+    width:70%;
+    margin: auto;
+}
+
+
+section{
+    position:relative;
+    margin:auto;
+    width: 98%;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border:2px solid rgb(49, 2, 74); 
+    box-shadow: 4px 5px 12px rgba(49, 2, 74,0.8); 
+    margin-top:25px;
+}
+
+section header{
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 99%;
+    font-size:1em;
+    padding:5px;
+    text-align: center;
+
+}
+
+section header figure{
+    width: 15%;
+}
+section header figure>img{
+    width:85%;
+}
+
+section header>h3{
+    font-size:2.5em ;
+    width:75%;
+}
+
+div.container-interior{
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items: center;   
+}
+
+article{
+    margin:auto;
+    position:relative;
+    width:25%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    border:0px solid rgb(86, 11, 235);
+}
+
+article figure{
+    position:relative;
+    width:85%;
+    border:0px solid yellowgreen;
+    height:380px;
+    overflow: hidden;
+}
+
+article figure img{
+    position:relative;
+    
+     width:99%;
+     max-height: 90%;
+    margin:auto;
+    box-shadow: 4px 5px 12px #392d2d;
+    border-radius: 5px;
+}
+article figure figcaption{
+    margin:auto;
+    text-align: center;
+    font-size:1.3em;
+    color: rgb(72, 14, 126);
+    font-weight: bold;
+    
+}
+
+article.textual{
+    margin: 35px 5px;
+    border:0px solid greenyellow;
+    width:50% ;
+}
+
+article.textual p{
+  color:rgb(152, 23, 49);
+  font-size: 1.2em;
+  font-style: italic;
+  text-shadow: 1px 1px #392d2d;
+}
