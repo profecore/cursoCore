@@ -96,6 +96,7 @@ aside figure{
     border-radius: 15px;
     background-color: black;
     box-shadow: 4px 5px 12px #392d2d;
+    overflow: hidden;
 }
 
 aside figure img{
@@ -124,10 +125,8 @@ aside div p{
 
 section{
     position:relative;
-
     margin:auto;
     width: 70%;
-    /*float:right;*/
     display:flex;
     flex-direction:row;
     justify-content: flex-start;
@@ -184,4 +183,14 @@ article header h3{
     padding:10px;
     text-align: center;
     
+}
+
+figure a{overflow: hidden;}
+
+img{
+    transition:transform 3s;
+}
+
+img:hover{
+    transform:scale(2,2);
 }

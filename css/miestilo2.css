@@ -46,8 +46,8 @@ nav li a{
 
 
 nav li a:hover{
-    color:ivory;
-    padding: 15px;
+  /*  color:ivory;
+    padding: 15px;*/
     background-color: rgb(240, 13, 13);
 }
 
@@ -226,4 +226,15 @@ article.textual p{
   font-size: 1.2em;
   font-style: italic;
   text-shadow: 1px 1px #392d2d;
+}
+
+
+figure a{overflow: hidden;}
+
+img{
+    transition:transform 2s;
+}
+
+img:hover{
+    transform:scale(1.18,1.18);
 }
