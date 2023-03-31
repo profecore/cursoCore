@@ -97,6 +97,7 @@ aside figure{
     border-radius: 15px;
     background-color: black;
     box-shadow: 4px 5px 12px #392d2d;
+    overflow: hidden;
 }
 
 aside figure img{
@@ -104,10 +105,16 @@ aside figure img{
     border-radius: 15px;
      width:100%;
     margin:auto;
-    
+    z-index: 0;
 }
 aside figure figcaption{
+    position:relative;
     margin:auto;
+    width: 100%;
+    text-align: center;
+    line-height: 2em;
+    background-color: black;
+    z-index: 9;
 }
 
 aside div{
@@ -191,30 +198,48 @@ article{
 
 article figure{
     position:relative;
-    width:85%;
-    border:0px solid yellowgreen;
-    height:380px;
-    overflow: hidden;
-}
-
-article figure img{
-    position:relative;
-    
-     width:99%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+     width:85%;
+     border:0px solid yellowgreen;
+     height:380px;
+     background-color: rgb(41, 4, 4);
+     overflow: hidden;
+     border-radius: 15px;
+     box-shadow: 4px 5px 12px #392d2d;
+ }
+ 
+ article figure a{
+     margin:auto;
+     display: inline-block;
+     width:99.9%; 
      max-height: 90%;
-    margin:auto;
-    box-shadow: 4px 5px 12px #392d2d;
-    border-radius: 5px;
-}
-article figure figcaption{
-    margin:auto;
-    text-align: center;
-    font-size:1.3em;
-    color: rgb(72, 14, 126);
-    font-weight: bold;
-    
-}
-
+     overflow: hidden;
+     border:0px solid whitesmoke;
+ }
+ 
+ article figure img{
+     position:relative;
+      width:99%;
+        
+     border-radius: 15px;
+     z-index: 0;
+ }
+ article figure figcaption{
+     position:relative;
+     bottom: 15px;
+     background-color: rgb(41, 4, 4);
+     width:100%;
+     text-align: center;
+     font-size:1.3em;
+     color: ivory;
+     font-weight: bold;
+     z-index: 99 !important;
+     border:0px solid red;
+     line-height: 2em;
+     height: 30px;
+ }
 article.textual{
     margin: 35px 5px;
     border:0px solid greenyellow;
@@ -237,4 +262,26 @@ img{
 
 img:hover{
     transform:scale(1.18,1.18);
+}
+
+footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    font-size: 1.5em;
+    background-color: rgb(49, 2, 74); 
+    color:ivory;
+    border-top: 10px solid rgb(68, 196, 247);
+}
+
+footer a{
+    text-decoration: none;
+    color:ivory;
+}
+
+.sociales{
+    color:ivory;
 }

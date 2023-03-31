@@ -144,32 +144,50 @@ article{
     justify-content:center;
     align-items: center;
     border:0px solid rgb(86, 11, 235);
+    border-radius: 15px;
 }
 
 article figure{
     position:relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
     width:85%;
     border:0px solid yellowgreen;
     height:380px;
+    background-color: rgb(41, 4, 4);
     overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 4px 5px 12px #392d2d;
+}
+
+article figure a{
+    margin:auto;
+    display: inline-block;
+    width:99.9%; 
+    max-height: 90%;
+    overflow: hidden;
+    border:0px solid whitesmoke;
 }
 
 article figure img{
     position:relative;
-    
      width:99%;
      max-height: 90%;
-    margin:auto;
-    box-shadow: 4px 5px 12px #392d2d;
-    border-radius: 5px;
+     margin:auto;
+    border-radius: 15px;
+    z-index: 0;
 }
 article figure figcaption{
-    margin:auto;
+    position:relative;
+    bottom: 5px;
     text-align: center;
-    font-size:2em;
-    color: rgb(72, 14, 126);
+    font-size:1.3em;
+    color: ivory;
     font-weight: bold;
-    
+    z-index: 99 !important;
+    line-height: 1.2em;
+    padding: 10px;
 }
 article header{
     width: 100%;
@@ -193,4 +211,26 @@ img{
 
 img:hover{
     transform:scale(2,2);
+}
+
+footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    font-size: 1.5em;
+    background-color: rgb(49, 2, 74); 
+    color:ivory;
+    border-top: 10px solid rgb(68, 196, 247);
+}
+
+footer a{
+    text-decoration: none;
+    color:ivory;
+}
+
+.sociales{
+    color:ivory;
 }
